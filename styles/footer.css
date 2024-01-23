@@ -1,0 +1,16 @@
+footer{
+    width: 100%;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+ 
+    padding:38px 0;
+    border-top: 1px solid (--silver);
+ }
+ 
+ footer a{
+ 
+    font-size: 18px;
+ }

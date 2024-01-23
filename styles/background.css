@@ -1,0 +1,76 @@
+.background{
+    z-index: -1;
+    position: absolute;
+    inset:0;
+
+    display: flex;
+   
+}
+
+.background::after{
+    content: '';
+    position: absolute;
+    inset:0;
+
+    background: var(--shadow-car);
+}
+
+.cloud{
+    position: absolute;
+    z-index: -2;
+    width: auto;
+    left: -258px;
+    height: 11vh;
+
+    animation: moveCloud 10s linear infinite;
+}
+
+.cloud:nth-child(1){
+    top: 80px;
+    animation-delay: 4s ;
+
+}
+
+@keyframes moveCloud{
+ from {
+    transform: translateX(0);
+ }
+
+
+ to {
+    transform: translateX(calc(100vw + 258px));
+ }
+
+}
+
+.cloud:nth-child(2){
+    top: 190px;
+   /* left: 450px;*/
+   animation-delay: 8s ;
+
+}
+.cloud:nth-child(3){
+    top: 420px;
+   /* left: 800px;*/
+  
+
+}
+.cloud:nth-child(4){
+    top: 310px;
+    /*left: 650px;*/
+    animation-delay: 6s ;
+
+}
+.cloud:nth-child(5){
+    top: 520px;
+   /* left: 450px;*/
+   animation-delay: 2.5s ;
+
+}
+
+.car{
+    width: 100%;
+    height: auto;
+
+    margin-top: auto;
+}
